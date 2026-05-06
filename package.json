@@ -1,0 +1,20 @@
+{
+  "name": "simplon-factory",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "OraneM99",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "dev": "concurrently -k -n \"Typescript,Node\" -p \"[{name}]\" -c \"blue,green\" \"tsc --watch\" \"nodemon dist/main.js\"",
+    "start": "tsc -p . && node dist/main.js",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.14",
+    "typescript": "^6.0.3"
+  }
+}
