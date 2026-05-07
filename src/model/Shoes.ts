@@ -5,9 +5,9 @@ export class Shoes extends Product {
 
     size: ShoeSize;
 
-    constructor (productId: number, name: string, weight: number, price: number) {
+    constructor (productId: number, name: string, weight: number, price: number, size: ShoeSize) {
         super(productId, name, weight, price);
-        this.size = ShoeSize.Size38;
+        this.size = size;
     }
 
     displayDetails(): string {
